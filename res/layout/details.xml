@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff" android:layout_height="wrap_content" android:layout_width="wrap_content">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:layout_width="wrap_content">   
+        <ScrollView android:id="@+id/scrollView1" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/container">
+        <RelativeLayout android:id="@+id/formSide" android:layout_height="fill_parent" android:layout_width="fill_parent">
+            <TextView android:id="@+id/problemForm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dip" android:text="CS Server Down" android:textColor="#000" android:layout_alignLeft="@+id/descriptionForm"></TextView>
+            <TextView android:id="@+id/descriptionForm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dip" android:text="The CS servers in Soda 330 are all down, and now I can't finish my CS160 project!" android:layout_below="@id/problemForm" android:textColor="#000" android:layout_toRightOf="@+id/descriptionField"></TextView>
+            <LinearLayout android:layout_height="wrap_content" android:layout_alignLeft="@+id/descriptionForm" android:id="@+id/commentContainer" android:layout_width="fill_parent" android:orientation="vertical" android:layout_below="@+id/imageHolder">
+            </LinearLayout>
+            <TextView android:id="@+id/severityForm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dip" android:textColor="#000" android:text="High" android:layout_alignLeft="@+id/descriptionForm" android:layout_below="@+id/descriptionForm"></TextView>
+            <ImageView
+                android:id="@+id/imageHolder"
+                android:layout_marginTop="20dip"
+                android:layout_marginRight="10dip"
+                android:layout_below="@id/severityForm"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY" android:layout_alignLeft="@+id/descriptionForm" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+            <TextView android:layout_marginLeft="5dip" android:text="Problem:" android:layout_height="wrap_content" android:textColor="#333" android:id="@+id/problemField" android:layout_width="wrap_content" android:layout_alignTop="@id/problemForm"></TextView>
+            <TextView android:layout_marginLeft="5dip" android:text="Description:" android:layout_height="wrap_content" android:textColor="#333" android:id="@+id/descriptionField" android:layout_width="wrap_content" android:layout_alignTop="@+id/descriptionForm" android:layout_marginRight="20dip"></TextView>
+            <TextView android:layout_marginLeft="5dip" android:text="Severity:" android:layout_height="wrap_content" android:textColor="#333" android:id="@+id/severityField" android:layout_width="wrap_content" android:layout_alignTop="@id/severityForm"></TextView>
+            <TextView android:layout_marginLeft="5dip" android:text="Picture:" android:textColor="#333" android:id="@+id/pictureField" android:layout_width="wrap_content" android:layout_alignTop="@id/imageHolder" android:visibility="invisible" android:layout_height="0px"></TextView>
+            <EditText android:id="@+id/commentBox" android:layout_width="fill_parent" android:layout_alignLeft="@+id/imageHolder" android:layout_below="@+id/imageHolder" android:layout_height="0px"></EditText>
+            <TextView android:layout_width="wrap_content" android:layout_marginLeft="5dip" android:text="Comment:" android:textColor="#333" android:id="@+id/commentField" android:layout_height="0px" android:layout_alignTop="@+id/commentContainer"></TextView>
+        </RelativeLayout>
+        <Button android:layout_height="40dip" android:layout_marginTop="20dip"  android:layout_below="@id/formSide" android:text="Close" android:layout_width="wrap_content" android:id="@+id/close" android:layout_alignParentRight="true"></Button>
+        <Button android:layout_height="40dip" android:layout_marginTop="20dip"  android:layout_below="@id/formSide" android:layout_width="wrap_content" android:layout_toLeftOf="@id/close" android:id="@+id/comment" android:text="Add Comment"></Button>
+        </RelativeLayout>
+        </ScrollView>
+        
+    </RelativeLayout>
+
+</LinearLayout>

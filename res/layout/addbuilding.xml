@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#fff" android:padding="10dip">
+        <LinearLayout android:layout_gravity="top" android:id="@+id/Title" android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="center_vertical" android:layout_marginBottom="20dip">
+        <ImageView android:id="@+id/imageView1" android:src="@drawable/apartment" android:scaleType="fitXY" android:layout_height="100dip" android:layout_width="100dip" android:layout_gravity="center_horizontal"></ImageView>
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_width="wrap_content" android:orientation="vertical" android:layout_height="wrap_content">
+            <TextView android:textColor="#000" android:id="@+id/textView1" android:text="TenManComm" android:layout_width="wrap_content" android:textSize="25dip" android:layout_height="wrap_content" android:paddingLeft="10dip" android:paddingTop="10dip" android:paddingBottom="5dip" android:textStyle="bold|italic"></TextView>
+            <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#666" android:textSize="20dip" android:paddingLeft="10dip" android:textStyle="italic" android:text="Buildings"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/buildinglist" android:orientation="vertical"></LinearLayout>
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/address2"></EditText>
+    <Button
+        android:id="@+id/addbutton"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="Add building"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+    <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="10dip" android:textColor="#000" android:layout_gravity="center" android:text="Register" android:textSize="25dip"></TextView>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:isScrollContainer="true">
+        <ScrollView android:id="@+id/scrollView1" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:id="@+id/relativeLayout1" android:layout_height="wrap_content">
+                <EditText android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="40dip" android:id="@+id/txt_name" android:layout_marginRight="10dip" android:layout_toRightOf="@+id/TextView07" android:layout_marginTop="20dip"></EditText>
+                <LinearLayout android:id="@+id/linearLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/txt_name" android:layout_alignLeft="@+id/txt_name">
+                    <RadioGroup android:orientation="horizontal" android:layout_width="wrap_content" android:gravity="center" android:id="@+id/radioGroup1" android:layout_height="wrap_content">
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tenant" android:id="@+id/radio_tenant" android:textColor="#000000" android:checked="true" android:layout_marginRight="10dip"></RadioButton>
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Manager" android:id="@+id/radio_manager" android:textColor="#000000"></RadioButton>
+                    </RadioGroup>
+                </LinearLayout>
+                <EditText
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/txt_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:id="@+id/txt_code"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@+id/TextView01"
+                    android:layout_marginTop="10dip"/>
+                <Button android:id="@+id/btn_register" android:text="Register" android:textSize="20sp" android:layout_below="@+id/txt_apt" android:layout_width="130dip" android:layout_height="wrap_content" android:layout_marginTop="20dip" android:layout_alignParentRight="true" android:layout_marginRight="10dip"></Button>
+                <EditText android:minWidth="70dip" android:gravity="center_vertical" android:layout_below="@+id/txt_code" android:layout_width="wrap_content" android:layout_height="40dip" android:id="@+id/txt_apt" android:layout_toRightOf="@+id/TextView05" android:layout_marginTop="10dip"></EditText>
+                <EditText
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:id="@+id/txt_username"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@+id/TextView05"
+                    android:layout_marginTop="10dip"/>
+                <EditText android:password="true" android:gravity="center_vertical" android:layout_below="@+id/txt_username" android:layout_width="fill_parent" android:layout_height="40dip" android:id="@+id/txt_password" android:layout_marginRight="10dip" android:layout_toRightOf="@+id/TextView05" android:layout_marginTop="10dip"></EditText>
+                <TextView android:gravity="center_vertical" android:textColor="#000" android:layout_alignBottom="@+id/txt_code" android:layout_alignLeft="@+id/TextView07" android:id="@+id/TextView01" android:text="Code:" android:layout_alignTop="@+id/txt_code" android:layout_below="@+id/TextView02" android:layout_width="82dip" android:paddingLeft="10sp" android:layout_height="wrap_content" android:layout_marginRight="10dip"></TextView>
+                <TextView android:gravity="center_vertical" android:textColor="#000" android:layout_alignBottom="@+id/txt_apt" android:layout_alignLeft="@+id/TextView07" android:id="@+id/TextView02" android:text="Apt#:" android:layout_alignTop="@+id/txt_apt" android:layout_below="@+id/TextView06" android:layout_width="82dip" android:paddingLeft="10sp" android:layout_height="wrap_content" android:layout_marginRight="10dip"></TextView>
+                <TextView android:gravity="center_vertical" android:textColor="#000" android:layout_alignBottom="@+id/txt_username" android:layout_alignLeft="@+id/TextView07" android:id="@+id/TextView05" android:text="Username:" android:layout_alignTop="@+id/txt_username" android:layout_below="@+id/TextView04" android:layout_width="82dip" android:paddingLeft="10sp" android:layout_height="wrap_content" android:layout_marginRight="10dip"></TextView>
+                <TextView android:gravity="center_vertical" android:textColor="#000" android:layout_alignBottom="@+id/txt_password" android:layout_alignLeft="@+id/TextView07" android:id="@+id/TextView06" android:text="Password:" android:layout_alignTop="@+id/txt_password" android:layout_below="@+id/TextView05" android:layout_width="82dip" android:paddingLeft="10sp" android:layout_height="wrap_content" android:layout_marginRight="10dip"></TextView>
+                <TextView android:gravity="center_vertical" android:textColor="#000" android:layout_alignBottom="@+id/txt_name" android:layout_alignLeft="@+id/TextView07" android:id="@+id/TextView07" android:text="Name:" android:layout_alignTop="@+id/txt_name" android:layout_width="82dip" android:paddingLeft="10sp" android:layout_height="wrap_content" android:layout_marginRight="10dip"></TextView>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

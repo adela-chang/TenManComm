@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff" android:layout_height="wrap_content" android:layout_width="wrap_content">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:layout_width="wrap_content">   
+        <ScrollView android:id="@+id/scrollView1" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        <RelativeLayout android:id="@+id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="top">
+        <RelativeLayout android:id="@+id/formSide" android:layout_height="fill_parent" android:layout_width="fill_parent">
+            <TextView android:id="@+id/nameForm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dip" android:textColor="#000" android:text="Laura Bing" android:layout_alignLeft="@id/descriptionForm"></TextView>
+            <TextView android:id="@+id/addressForm1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dip" android:layout_below="@id/nameForm" android:textColor="#000" android:text="1234 Fake St.  #304" android:layout_alignLeft="@id/descriptionForm"></TextView>
+            <TextView android:id="@+id/addressForm2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/addressForm1" android:textColor="#000" android:text="Berkeley, CA  94709" android:layout_marginTop="5dip" android:layout_alignLeft="@id/descriptionForm"></TextView>
+            <TextView android:layout_below="@+id/addressForm2" android:layout_marginRight="10dip" android:layout_marginTop="20dip" android:layout_height="wrap_content" android:id="@+id/problemForm" android:layout_width="wrap_content" android:text="CS Servers Down" android:textColor="#000" android:layout_alignLeft="@id/descriptionForm"></TextView>
+            <TextView android:id="@+id/descriptionForm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dip" android:text="The CS servers in Soda 330 are all down, and now I can't finish my CS160 project!" android:layout_below="@id/problemForm" android:textColor="#000" android:layout_toRightOf="@id/descriptionField"></TextView>
+            <TextView android:layout_height="wrap_content" android:layout_below="@+id/descriptionForm" android:layout_width="wrap_content" android:text="Add Comment" android:textColor="#0000FF" android:id="@+id/commentLink" android:layout_alignParentRight="true" android:layout_marginRight="20dip"></TextView>
+            <EditText android:layout_below="@+id/commentLink" android:text="EditText" android:layout_alignLeft="@+id/descriptionForm" android:layout_width="fill_parent" android:layout_height="1px" android:id="@+id/commentBox"></EditText>
+            <TextView android:id="@+id/severityForm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dip" android:textColor="#000" android:text="High" android:layout_alignLeft="@id/descriptionForm" android:layout_below="@id/commentBox"></TextView>
+            <LinearLayout android:id="@+id/linearLayout1" android:layout_below="@+id/severityForm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/severityForm"></LinearLayout>
+            <TextView android:layout_height="wrap_content" android:layout_toRightOf="@+id/severityForm" android:layout_width="wrap_content" android:layout_alignTop="@+id/severityForm" android:layout_alignBottom="@+id/severityForm" android:text="Edit" android:textColor="#0000FF" android:layout_marginLeft="10dip" android:layout_marginRight="10dip" android:id="@+id/editSeverity"></TextView>
+            <ImageView android:layout_width="wrap_content" android:src="@drawable/grayflag" android:scaleType="fitXY" android:layout_height="20dip" android:id="@+id/flag" android:layout_alignTop="@+id/editSeverity" android:layout_toRightOf="@+id/editSeverity"></ImageView>
+            <ImageView android:id="@+id/imageHolder" android:layout_height="100dip" android:layout_marginTop="20dip"  android:layout_marginRight="10dip" android:layout_below="@id/severityForm" android:layout_width="100dip" android:background="#FFFFFF" android:src="@drawable/csproblem" android:scaleType="fitXY" android:layout_alignLeft="@id/descriptionForm"></ImageView>
+            <TextView android:text="Name:" android:layout_height="wrap_content" android:textColor="#333" android:id="@+id/nameField" android:layout_width="wrap_content" android:layout_marginLeft="5dip" android:layout_alignTop="@id/nameForm"></TextView>
+            <TextView android:text="Address:" android:layout_height="wrap_content" android:textColor="#333" android:id="@+id/addressField" android:layout_width="wrap_content" android:layout_alignBottom="@+id/addressForm1" android:layout_marginLeft="5dip"></TextView>
+            <TextView android:text="Problem:" android:layout_height="wrap_content" android:textColor="#333" android:id="@+id/problemField" android:layout_width="wrap_content" android:layout_alignBottom="@id/problemForm" android:layout_marginLeft="5dip"></TextView>
+            <TextView android:text="Description:" android:layout_height="wrap_content" android:textColor="#333" android:id="@+id/descriptionField" android:layout_width="wrap_content" android:layout_alignTop="@+id/descriptionForm" android:layout_marginLeft="5dip" android:layout_marginRight="20dip"></TextView>
+            <TextView android:text="Severity:" android:layout_height="wrap_content" android:textColor="#333" android:id="@+id/severityField" android:layout_width="wrap_content" android:layout_alignTop="@+id/severityForm" android:layout_marginLeft="5dip"></TextView>
+            <TextView android:text="Picture:" android:layout_height="wrap_content" android:textColor="#333" android:id="@+id/pictureField" android:layout_width="wrap_content" android:layout_alignTop="@id/imageHolder" android:layout_marginLeft="5dip"></TextView>
+            <RadioGroup android:layout_below="@+id/severityForm" android:id="@+id/radioGroup1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/severityForm" android:orientation="horizontal" android:visibility="invisible">
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radio0" android:checked="true" android:text="low" android:textColor="#000"></RadioButton>
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radio1" android:text="med" android:textColor="#000"></RadioButton>
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radio2" android:text="high" android:textColor="#000"></RadioButton>
+            </RadioGroup>
+        </RelativeLayout>
+        <Button android:layout_height="40dip" android:layout_marginTop="20dip"  android:layout_below="@id/formSide" android:layout_width="wrap_content" android:id="@+id/save" android:text="Save" android:layout_toLeftOf="@id/close"></Button>
+        <Button android:layout_height="40dip" android:layout_marginTop="20dip"  android:layout_below="@id/formSide" android:text="Close" android:layout_width="wrap_content" android:id="@+id/close" android:layout_alignParentRight="true"></Button>
+        </RelativeLayout>
+        </ScrollView>
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, TenManComm!</string>
+    <string name="app_name">TenManComm</string>
+    <string name="register"><u>New user? Register.</u></string>
+    <string name="viewmore"><b>( <u>View More</u> )</b></string>
+</resources>
